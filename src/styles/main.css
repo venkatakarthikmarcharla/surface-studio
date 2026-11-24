@@ -1,0 +1,221 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: initial; /* Lenis handles this */
+    overflow-x: hidden; /* mobile browsers ignore body overflow alone */
+    overflow-x: clip;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    overflow-x: clip;
+    max-width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: none; /* Custom cursor */
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: clamp(2.2rem, 10vw, 6rem);
+}
+
+h2 {
+    font-size: clamp(1.8rem, 7vw, 4.5rem);
+}
+
+h3 {
+    font-size: clamp(1.4rem, 4vw, 2.5rem);
+    font-weight: 500;
+}
+
+p {
+    font-size: clamp(0.95rem, 2.5vw, 1.125rem);
+    color: var(--text-secondary);
+    max-width: 75ch;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.lead-text {
+    font-size: clamp(1.1rem, 3vw, 1.75rem);
+    font-weight: 300;
+    color: var(--text-primary);
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utilities */
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.padding-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-center p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.mt-5 {
+    margin-top: 4rem;
+}
+
+.pb-8 {
+    padding-bottom: 8rem;
+}
+
+.bg-secondary {
+    background-color: var(--bg-secondary);
+}
+
+.text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* Custom Cursor */
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-orange);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}
+
+.custom-cursor-follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 138, 0, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.cursor-hover .custom-cursor-follower {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 138, 0, 0.1);
+    border-color: transparent;
+}
+
+/* Lenis Smooth Scroll */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-scroll-container] {
+  will-change: transform;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Mobile Responsiveness Overrides */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+    
+    .padding-section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    
+    .mt-5 {
+        margin-top: 2.5rem;
+    }
+    
+    .pb-8 {
+        padding-bottom: 5rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Hide Custom Cursor on Mobile/Touch Devices */
+@media (pointer: coarse), (max-width: 768px) {
+    .custom-cursor, .custom-cursor-follower {
+        display: none !important;
+    }
+    body {
+        cursor: auto;
+    }
+    .showcase-item {
+        cursor: auto !important;
+    }
+}

@@ -1,0 +1,29 @@
+/* Theme Variables */
+:root {
+    --bg-primary: #121214;
+    --bg-secondary: #1E1E22;
+    --border-color: #2B2B31;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B5B5BC;
+    --text-inverse: #121214;
+    
+    --accent-orange: #FF8A00;
+    --accent-red: #F44336;
+    --accent-violet: #8B5CF6;
+    
+    --gradient-primary: linear-gradient(90deg, #FFB000 0%, #F44336 50%, #8B5CF6 100%);
+    --gradient-metallic: linear-gradient(90deg, #FF8A00 0%, #E53935 55%, #6D5DFB 100%);
+    
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.6);
+    --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.7);
+    --shadow-glow: 0 0 20px rgba(255, 138, 0, 0.15);
+    
+    --glass-bg: rgba(30, 30, 34, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.05);
+}
+
+/* Exemptions for animations that need to be fast */
+.slide-bg, .btn-glow, .magnetic-btn, .mouse, .card-glow {
+    transition: none; /* Let specific component styles or GSAP handle these */
+}

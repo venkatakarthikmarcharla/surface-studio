@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surface Studio | Premium Finishes & Coatings</title>
+    <meta name="description"
+        content="High-end surface finishing and coating studio specializing in PU finishes, metallic coatings, texture finishes, and custom surface solutions.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./fav-icon.png">
+
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/styles/theme.css">
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="/src/styles/components.css">
+</head>
+
+<body>
+    <div id="cursor" class="custom-cursor"></div>
+    <div id="cursor-follower" class="custom-cursor-follower"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <img src="/Logo White Color PNG.png" alt="Surface Studio" class="loader-logo">
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="/Logo White Color PNG.png" alt="Surface Studio Logo" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="about.html" class="nav-link text-reveal-link">About Us</a>
+                <a href="services.html" class="nav-link text-reveal-link">Our Services</a>
+                <a href="contact.html" class="nav-link text-reveal-link">Contact Us</a>
+                <a href="contact.html" class="btn btn-outline btn-sm hover-glow">Get a Quote</a>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="services.html" class="mobile-nav-link">Services</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+            <a href="contact.html" class="btn btn-primary magnetic-btn mt-4">Get a Quote</a>
+        </div>
+    </nav>
+
+    <main data-scroll-container>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-slider">
+                <!-- Slides injected by JS or hardcoded -->
+                <div class="slide slide-1 active">
+                    <div class="slide-bg overlay-gradient" style="background-image: url('./src/assets/hero-1.jpg');">
+                    </div>
+                </div>
+                <div class="slide slide-2">
+                    <div class="slide-bg overlay-gradient" style="background-image: url('./src/assets/hero-2.jpg');">
+                    </div>
+                </div>
+                <div class="slide slide-3">
+                    <div class="slide-bg overlay-gradient" style="background-image: url('./src/assets/hero-3.jpg');">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-text-wrapper">
+                    <h1 class="hero-headline">
+                        <span class="static-text">We Create</span>
+                        <br>
+                        <span id="typed-text" class="typed-text">Engineered Finishes.</span><span
+                            class="cursor">|</span>
+                    </h1>
+                    <p class="hero-subline">Precision coating. Luxury in every layer. Beyond paint.</p>
+
+                    <div class="hero-cta-group">
+                        <a href="#expertise" class="btn btn-primary magnetic-btn">
+                            <span class="btn-text">Explore Finishes</span>
+                            <div class="btn-glow"></div>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary magnetic-btn">
+                            <span class="btn-text">Get a Quote</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <!-- 2. About Surface Studio -->
+        <section id="about" class="about-section split-section padding-section">
+            <div class="container">
+                <div class="split-grid">
+                    <div class="split-content reveal-left">
+                        <h2 class="section-title">Every surface <br> <span class="text-gradient">tells a story.</span>
+                        </h2>
+                        <p class="lead-text">We are an architectural luxury surface lab dedicated to redefining the
+                            boundaries of material finishes.</p>
+                        <p>Our engineered solutions go beyond protection. We craft immersive textures, metallic
+                            reflections, and flawless coats that elevate the spaces they inhabit.</p>
+                        <ul class="feature-list mt-4 stagger-list">
+                            <li><span class="check"></span> Precision is visible.</li>
+                            <li><span class="check"></span> Crafted beyond protection.</li>
+                            <li><span class="check"></span> World-class consistency.</li>
+                        </ul>
+                    </div>
+                    <div class="split-visual reveal-right">
+                        <div class="image-wrapper float-panel hover-scale">
+                            <img src="/src/assets/about-img.jpg" alt="Surface detail close up" loading="lazy">
+                            <div class="glass-badge">
+                                <span>Engineered Perfection</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Finishing Expertise -->
+        <section id="expertise" class="expertise-section padding-section bg-secondary">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="section-title">Finishing <span class="text-gradient">Expertise</span></h2>
+                    <p class="section-subtitle">A synthesis of advanced technology and artisanal precision.</p>
+                </div>
+
+                <div class="cards-grid mt-5">
+                    <div class="expertise-card reveal-up hover-lift">
+                        <div class="card-icon">
+                            <svg class="anim-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2" class="anim-layer layer-1"></polygon>
+                                <polyline points="2 12 12 17 22 12" class="anim-layer layer-2"></polyline>
+                                <polyline points="2 17 12 22 22 17" class="anim-layer layer-3"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">PU Finishes</h3>
+                        <p class="card-desc">High-build, ultra-durable polyurethane finishes offering piano gloss to
+                            dead matte sheens with unmatched depth.</p>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <div class="expertise-card reveal-up hover-lift" style="transition-delay: 0.1s;">
+                        <div class="card-icon">
+                            <svg class="anim-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 3v18" class="anim-sparkle"></path>
+                                <path d="M3 12h18" class="anim-sparkle delay-1"></path>
+                                <path d="M5.6 5.6l12.8 12.8" class="anim-sparkle delay-2"></path>
+                                <path d="M18.4 5.6L5.6 18.4" class="anim-sparkle delay-3"></path>
+                                <circle cx="12" cy="12" r="3" class="anim-pulse"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Metallic Coatings</h3>
+                        <p class="card-desc">Liquid metal engineering. Authentic metallic reflections mimicking brass,
+                            copper, and specialized industrial alloys.</p>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <div class="expertise-card reveal-up hover-lift" style="transition-delay: 0.2s;">
+                        <div class="card-icon">
+                            <svg class="anim-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" class="anim-draw"></rect>
+                                <path d="M3 9h18" class="anim-draw delay-1"></path>
+                                <path d="M9 21V9" class="anim-draw delay-2"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Texture Finishes</h3>
+                        <p class="card-desc">Tactile dimensions ranging from micro-cement aesthetics to aggressive
+                            industrial textures and brushed stone.</p>
+                        <div class="card-glow"></div>
+                    </div>
+
+                    <div class="expertise-card reveal-up hover-lift" style="transition-delay: 0.3s;">
+                        <div class="card-icon">
+                            <svg class="anim-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M12 2.7l3.8 4.7C17.5 9 19 11.2 19 13.5a7 7 0 0 1-14 0c0-2.3 1.5-4.5 3.2-6.1L12 2.7z"
+                                    class="anim-draw drop-path"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Custom Solutions</h3>
+                        <p class="card-desc">Bespoke formulations designed specifically for architectural intent,
+                            prototyping, and signature brand applications.</p>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Signature Finishes Showcase -->
+        <section id="showcase" class="showcase-section padding-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">Core <span class="text-gradient">Services</span></h2>
+                    <p class="section-subtitle">Excellence in every layer of finishing.</p>
+                </div>
+            </div>
+
+            <div class="showcase-nav-wrapper">
+                <div class="horizontal-scroll-wrapper mt-4">
+                    <div class="horizontal-container">
+                        <!-- Service 1: PU Polish -->
+                        <div class="showcase-item reveal-scale hover-scale">
+                            <div class="showcase-img" style="background-image: url('./src/assets/pu-finish.png');"
+                                loading="lazy"></div>
+                            <div class="showcase-info">
+                                <h4>PU Polish Services</h4>
+                                <p>Premium Polyurethane Finishes</p>
+                            </div>
+                        </div>
+
+                        <!-- Service 2: Polyester Polish -->
+                        <div class="showcase-item reveal-scale hover-scale" style="transition-delay: 0.1s;">
+                            <div class="showcase-img"
+                                style="background-image: url('./src/assets/polyester-finish.png');" loading="lazy">
+                            </div>
+                            <div class="showcase-info">
+                                <h4>Polyester Polish Services</h4>
+                                <p>Ultra-High Gloss & Durability</p>
+                            </div>
+                        </div>
+
+                        <!-- Service 3: Wood Finishing -->
+                        <div class="showcase-item reveal-scale hover-scale" style="transition-delay: 0.2s;">
+                            <div class="showcase-img" style="background-image: url('./src/assets/wood-finish.png');"
+                                loading="lazy"></div>
+                            <div class="showcase-info">
+                                <h4>Wood Finishing Services</h4>
+                                <p>Traditional & Modern Wood Treatments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows (Mainly for Mobile/Tablets) -->
+                <div class="showcase-arrows">
+                    <button class="showcase-arrow prev" aria-label="Previous">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button class="showcase-arrow next" aria-label="Next">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Process Section -->
+        <section id="process" class="process-section padding-section bg-secondary">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <h2 class="section-title">The <span class="text-gradient">Precision</span> Workflow</h2>
+                    <p class="section-subtitle">A highly engineered approach to surface perfection.</p>
+                </div>
+
+                <div class="process-horizontal mt-5">
+
+                    <div class="process-step-hz reveal-up">
+                        <div class="step-icon-hz">
+                            <svg class="anim-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 12V8a3 3 0 0 1 6 0v4" class="anim-draw"></path>
+                                <rect x="8" y="12" width="8" height="10" rx="1" class="anim-draw delay-1"></rect>
+                            </svg>
+                        </div>
+                        <div class="step-content-hz">
+                            <h3>01. Surface Preparation</h3>
+                            <p>Micro-abrasion and chemical neutralizing to ensure flawless adhesion on any substrate.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step-hz reveal-up">
+                        <div class="step-icon-hz">
+                            <svg class="anim-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2" class="anim-layer layer-1"></polygon>
+                                <polyline points="2 12 12 17 22 12" class="anim-layer layer-2"></polyline>
+                                <polyline points="2 17 12 22 22 17" class="anim-layer layer-3"></polyline>
+                            </svg>
+                        </div>
+                        <div class="step-content-hz">
+                            <h3>02. Primer Application</h3>
+                            <p>High-build isolation layers to completely block out substrate imperfections.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step-hz reveal-up">
+                        <div class="step-icon-hz">
+                            <svg class="anim-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" class="anim-pulse"></circle>
+                                <circle cx="12" cy="12" r="6" class="anim-pulse delay-1"></circle>
+                                <circle cx="12" cy="12" r="2" class="anim-pulse delay-2"></circle>
+                            </svg>
+                        </div>
+                        <div class="step-content-hz">
+                            <h3>03. Precision Coating</h3>
+                            <p>Climate-controlled application using HVLP and air-assisted technology.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step-hz reveal-up">
+                        <div class="step-icon-hz">
+                            <svg class="anim-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="4" class="anim-pulse"></circle>
+                                <line x1="12" y1="2" x2="12" y2="5" class="anim-layer layer-1"></line>
+                                <line x1="12" y1="19" x2="12" y2="22" class="anim-layer layer-1"></line>
+                                <line x1="4.93" y1="4.93" x2="7.05" y2="7.05" class="anim-layer layer-2"></line>
+                                <line x1="16.95" y1="16.95" x2="19.07" y2="19.07" class="anim-layer layer-2"></line>
+                                <line x1="2" y1="12" x2="5" y2="12" class="anim-layer layer-3"></line>
+                                <line x1="19" y1="12" x2="22" y2="12" class="anim-layer layer-3"></line>
+                                <line x1="4.93" y1="19.07" x2="7.05" y2="16.95" class="anim-layer layer-1"></line>
+                                <line x1="16.95" y1="7.05" x2="19.07" y2="4.93" class="anim-layer layer-1"></line>
+                            </svg>
+                        </div>
+                        <div class="step-content-hz">
+                            <h3>04. Controlled Curing</h3>
+                            <p>IR and forced-air curing cycles to cross-link polymers for maximum durability.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step-hz reveal-up">
+                        <div class="step-icon-hz">
+                            <svg class="anim-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" class="anim-draw"></circle>
+                                <path d="M9 12l2 2 4-4" class="anim-draw delay-2"></path>
+                            </svg>
+                        </div>
+                        <div class="step-content-hz">
+                            <h3>05. Final Perfection</h3>
+                            <p>Multi-stage compounding and polishing to achieve the requested optical clarity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Why Surface Studio -->
+        <section id="why-us" class="stats-section padding-section dark-only">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item reveal-up">
+                        <div class="stat-number">100<span class="text-gradient">%</span></div>
+                        <div class="stat-label">Precision Matching</div>
+                    </div>
+                    <div class="stat-item reveal-up" style="transition-delay: 0.1s;">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years of Durability</div>
+                    </div>
+                    <div class="stat-item reveal-up" style="transition-delay: 0.2s;">
+                        <div class="stat-number">99<span class="text-gradient">%</span></div>
+                        <div class="stat-label">Gloss Retention</div>
+                    </div>
+                    <div class="stat-item reveal-up" style="transition-delay: 0.3s;">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Custom Possibilities</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CTA Section -->
+        <section id="contact" class="cta-section padding-section pb-8">
+            <div class="container">
+                <div class="cta-box glass-panel reveal-scale">
+                    <div class="cta-content">
+                        <h2 class="cta-title">Let's Create Something <span class="text-gradient">Remarkable.</span></h2>
+                        <p class="cta-subtitle">Bring your architectural vision to life with world-class surface
+                            engineering.</p>
+
+                        <div class="cta-actions mt-4">
+                            <a href="contact.html" class="btn btn-primary magnetic-btn btn-lg hover-glow reveal-up">
+                                <span class="btn-text">Start a Project</span>
+                                <div class="btn-glow"></div>
+                            </a>
+                            <a href="https://wa.me/yournumber" class="btn btn-outline btn-lg hover-glow reveal-up"
+                                style="transition-delay: 0.1s;">
+                                <span class="btn-text">Contact via WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cta-qr">
+                        <div class="qr-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-qr-code">
+                                <rect width="5" height="5" x="3" y="3" rx="1" />
+                                <rect width="5" height="5" x="16" y="3" rx="1" />
+                                <rect width="5" height="5" x="3" y="16" rx="1" />
+                                <path d="M21 16h-3a2 2 0 0 0-2 2v3" />
+                                <path d="M21 21v.01" />
+                                <path d="M12 7v3a2 2 0 0 1-2 2H7" />
+                                <path d="M3 12h.01" />
+                                <path d="M12 3h.01" />
+                                <path d="M12 16v.01" />
+                                <path d="M16 12h1" />
+                                <path d="M21 12v.01" />
+                                <path d="M12 21v-1" />
+                            </svg>
+                        </div>
+                        <span>Scan to connect</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="/Logo White Color PNG.png" alt="Surface Studio" class="footer-logo">
+                    <p>High-end surface finishing and coating studio.</p>
+                    <a href="mailto:sales@surfacestudio.in" class="footer-email">sales@surfacestudio.in</a>
+                </div>
+                <nav class="footer-links" aria-label="Footer">
+                    <div class="link-group">
+                        <h4>Studio</h4>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Services</h4>
+                        <a href="services.html">PU Polish</a>
+                        <a href="services.html">Polyester Polish</a>
+                        <a href="services.html">Wood Finishing</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <a href="contact.html">Get a Quote</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Connect</h4>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="mailto:sales@surfacestudio.in">Email</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Surface Studio. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="mobile-bottom-nav" aria-label="Mobile">
+        <a href="index.html" class="mbn-link active" aria-current="page">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg>
+            <span>Home</span>
+        </a>
+        <a href="about.html" class="mbn-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span>About</span>
+        </a>
+        <a href="services.html" class="mbn-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            <span>Services</span>
+        </a>
+        <a href="contact.html" class="mbn-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <!-- CDNs for standalone execution -->
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Main Script -->
+    <script type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>

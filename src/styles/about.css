@@ -1,0 +1,401 @@
+/* About Page Specific Styles */
+
+/* Common Elements */
+.about-label {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.about-section-padding {
+    padding: 8rem 0;
+}
+
+/* About Hero */
+.about-hero {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+}
+
+.about-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.about-hero-content p {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.about-hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.about-hero-stats {
+    display: flex;
+    gap: 3rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+}
+
+.about-stat h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.about-stat p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.about-hero-image {
+    width: 100%;
+    height: 700px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.about-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About Approach */
+.about-approach-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.about-approach-image {
+    width: 100%;
+    height: 600px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.about-approach-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-approach-content h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.about-approach-content p {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.checklist-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.checklist-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(255, 138, 0, 0.1);
+    color: var(--accent-orange);
+}
+
+/* Specializations Section */
+.about-specializations {
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.spec-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.spec-card {
+    background: #000000; /* Solid black for maximum contrast */
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 3.5rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+    filter: none !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure cards fill the grid row height */
+}
+
+.spec-card:hover {
+    border-color: var(--accent-orange);
+    /* Removed box-shadow to prevent blur perception */
+}
+
+.spec-card-featured {
+    background: var(--gradient-metallic);
+    border: none;
+}
+
+.spec-card-featured h3, 
+.spec-card-featured p, 
+.spec-card-featured .spec-list li {
+    color: #ffffff !important;
+    text-shadow: none;
+}
+
+.spec-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 2rem;
+    color: var(--accent-orange);
+    filter: none !important;
+}
+
+.spec-card-featured .spec-icon {
+    color: #ffffff;
+}
+
+.spec-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.spec-card p {
+    font-size: 1rem;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.spec-list {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1; /* Pushes content to fill height */
+}
+
+.spec-list li {
+    font-size: 0.95rem;
+    color: #cccccc;
+    padding: 0.6rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.spec-list li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: var(--accent-orange);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.spec-card-featured .spec-list li::before {
+    background: #ffffff;
+}
+
+.spec-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 0.5rem 1rem;
+    border-radius: 4px; /* Sharper corners */
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-weight: 700;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 992px) {
+    .spec-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .spec-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* About Milestones (Why Surface Studio) */
+.about-milestones-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+
+.milestones-header-left {
+    max-width: 400px;
+}
+
+.milestones-header-left h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.milestones-header-right {
+    max-width: 500px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.milestones-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.milestone-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.milestone-card-primary {
+    background: var(--gradient-metallic);
+    border: none;
+    color: #fff;
+}
+
+.milestone-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+}
+
+.milestone-card-primary .milestone-icon {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.milestone-card h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.milestone-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.milestone-card-primary p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .about-hero-grid, .about-approach-grid {
+        gap: 2rem;
+    }
+    .about-hero-image {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero { padding-top: 8rem; }
+    .about-hero-grid, .about-approach-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .about-hero-content h1 { font-size: 2.5rem; }
+    .about-hero-image { height: 400px; }
+    .about-approach-grid .about-approach-image {
+        grid-row: 2;
+        height: 350px;
+    }
+    .checklist-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .spec-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .about-milestones-header {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+        align-items: center;
+    }
+    .milestones-header-left h2 { font-size: 2.2rem; }
+    .milestones-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-hero-stats {
+        justify-content: center;
+        gap: 2rem;
+    }
+    .about-stat { text-align: center; }
+}
