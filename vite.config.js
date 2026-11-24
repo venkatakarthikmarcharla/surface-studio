@@ -5,6 +5,7 @@ const pages = ['index', 'about', 'services', 'contact', 'privacy', 'terms'];
 
 export default defineConfig({
   root: '.',
+  base: './',
   server: {
     port: 3000,
     open: true
